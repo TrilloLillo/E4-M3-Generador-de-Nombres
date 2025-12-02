@@ -10,4 +10,7 @@ const nombreUsuario = nombreInicial.concat(apellidoInicial + numeros);
 
 console.log(nombreUsuario);
 
-document.getElementById("Resultado").innerHTML += "<h2>"+nombreUsuario+"</h2>" ;
+document.getElementById("submit").addEventListener("click", function (e) {
+  document.getElementById("Resultado").innerHTML +=
+    "<h2>" + nombreUsuario + "</h2>";
+});
